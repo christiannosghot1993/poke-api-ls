@@ -1,0 +1,77 @@
+<div class="pokemon-container">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <img  [src]="image" [alt]="name" height="150px" class="p-3 rounded mx-auto d-block">
+            <h1 style="font-weight: bolder; text-align: center;">{{name}}</h1>
+            <h2 style="text-align: center;">{{tipo}}</h2>
+        </div>
+        <div class="col-12 col-md-8">
+            <div class="row pt-3 ">
+                <div class="col-3 ps-4 ps-sm-3">
+                    <p style="font-weight: bolder;">HP</p>
+                </div>
+                <div class="col-9 pe-5">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-success " role="progressbar" [style]="'width: '+hp+'%'"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 ps-4 ps-sm-3">
+                    <p style="font-weight: bolder;">Ataque</p>
+                </div>
+                <div class="col-9 pe-5">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped " role="progressbar" [style]="'width: '+ataque+'%'"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 ps-4 ps-sm-3">
+                    <p style="font-weight: bolder;">Defensa</p>
+                </div>
+                <div class="col-9 pe-5">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-info" role="progressbar" [style]="'width: '+defensa+'%'"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 ps-4 ps-sm-3">
+                    <p style="font-weight: bolder;">Ataque Especial</p>
+                </div>
+                <div class="col-9 pe-5">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-secondary" role="progressbar" [style]="'width: '+ataqueEspecial+'%'"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 ps-4 ps-sm-3">
+                    <p style="font-weight: bolder;">Defensa Especial</p>
+                </div>
+                <div class="col-9 pe-5">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" [style]="'width: '+defensaEspecial+'%'"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 ps-4 ps-sm-3">
+                    <p style="font-weight: bolder;">Velocidad</p>
+                </div>
+                <div class="col-9 pe-5">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" [style]="'width: '+velocidad+'%'"
+                             aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

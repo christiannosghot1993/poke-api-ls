@@ -1,0 +1,26 @@
+<form class="row mx-auto " style="width: 75%;" [formGroup]="formRegistro" (ngSubmit)="guardarInformacionRegistro()"  >
+    <div class="col-12 form-floating mb-3">
+        <input type="email" class="form-control" id="nombre" placeholder="nombres" formControlName="nombre" >
+        <label for="nombre">Nombres*</label>
+      </div>
+      <div class="col-12 form-floating mb-3">
+        <select  class="form-select" id="floatingSelect" aria-label="Floating label select example" formControlName="pasatiempo">
+          <option *ngFor="let pasatiempo of pasatiempos" value={{pasatiempo.descripcion}}>{{pasatiempo.descripcion}}</option>
+        </select>
+        <label for="floatingSelect">Pasatiempo favorito</label>
+      </div>
+      <div class="col-12 form-floating mb-3">
+        <input type="date" class="form-control" id="cumple" placeholder="cumpleaños" formControlName="cumpleanios">
+        <label for="cumple">Cumpleaños*</label>
+      </div>
+      <div class="col-12 form-floating mb-3">
+        <input type="email" class="form-control" id="dui" placeholder="dui" formControlName="dui">
+        <label for="dui">DUI*</label>
+      </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary" style="margin: auto; width: 60%; display: block;" [disabled]="!formRegistro.valid">Continuar</button>
+    </div>
+    
+  </form>
+
+  

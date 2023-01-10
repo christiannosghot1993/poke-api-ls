@@ -1,0 +1,20 @@
+<div *ngIf="!cargando">
+  <app-titulo-cabecera [titulo]="'¡Hola! Configuremos tu perfil'"
+    [subtitulo]="'Queremos conocerte mejor.'"></app-titulo-cabecera>
+
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <app-imagen-perfil [titulo]="'Imagen de perfil'" [imgUrl]="urlImagen"
+        [mostrarInputFile]="true"></app-imagen-perfil>
+    </div>
+    <div class="col-12 col-md-8 pt-5 pt-md-0">
+      <app-titulo-cabecera [style]="'text-align: center;'" [titulo]="'Tu información'"
+        [subtitulo]="'Completa la siguiente información para completar tu perfil'"></app-titulo-cabecera>
+      <app-registro-perfil (informacionRegistro)="registroAgregado($event)"></app-registro-perfil>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="cargando" class="position-absolute top-50 start-50 translate-middle">
+  <img src="../../assets/img/poke-api-cargando.gif" alt="cargando">
+</div> 

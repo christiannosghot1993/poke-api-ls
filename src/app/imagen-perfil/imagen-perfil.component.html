@@ -1,0 +1,26 @@
+<div class="card tarjeta">
+    <div class="card-body">
+        <h5 *ngIf="!registroCompleto" class="card-title">{{titulo}}</h5>
+        <div *ngIf="registroCompleto" class=" badge d-flex m-3" >
+            <h5 class="me-auto">Entrenador</h5>
+            <img src="../../assets/img/medalla-pokemon.png" alt="medalla-pokemon" class="medalla">
+        </div>
+        <div style="margin: auto; display: flex; justify-content: center;">
+            <img [src]="imgUrl" accept="image/*" alt="imagen_de_perfil" class="imagen-perfil">
+        </div>
+
+        <div *ngIf="mostrarInputFile">
+            <input class="form-control" type="file" id="formFile" (change)="subirImagen($event)">
+            <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
+        </div>
+        <div style="display: block; margin: auto; width: 80%;">
+            <div *ngIf="!mostrarInputFile" style="text-align: left;">
+                <p style="color: white;"><strong>Pasatiempo:</strong> {{dataRegistro.pasatiempo}}</p>
+                <p style="color: white;"><strong>Edad:</strong> {{edad}}</p>
+                <p style="color: white;"><strong>DUI:</strong> {{dataRegistro.dui}}</p>
+            </div>
+        </div>
+        
+
+    </div>
+</div>

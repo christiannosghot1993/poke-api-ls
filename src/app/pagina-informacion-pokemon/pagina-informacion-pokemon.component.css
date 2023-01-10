@@ -1,0 +1,11 @@
+.button-outline{
+    background-color: transparent;
+    border: 2px solid #185A7D;
+    color: #185A7D;
+    font-size: medium;
+    padding: 10px;
+}
+.button-outline:hover{
+    background-color: #185A7D;
+    color: white;
+}

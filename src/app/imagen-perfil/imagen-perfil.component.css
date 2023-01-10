@@ -1,0 +1,28 @@
+.tarjeta {
+    text-align: center;
+    background-color: #00693C;
+    border-radius: 30px;
+}
+
+h5 {
+    text-align: center;
+    color: white;
+}
+
+.btn {
+    border-radius: 5px;
+    background-color: azure;
+    color: #185A7D;
+}
+
+.medalla {
+    height: 50px;
+}
+
+.imagen-perfil{
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 10px black solid;
+    margin-bottom: 15px;
+}
